@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-guid: 4421c190e3db1794384777995f8fc5f2
+guid: cd54a659a9fbe38418df9c2b459a994e
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 1800468650891611510
-    second: WiggityWindmill_0
-  - first:
-      213: 3292527256868906408
-    second: WiggityWindmill_1
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -75,66 +69,13 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: WiggityWindmill_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 25
-        width: 204
-        height: 332
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5466fe002ad5d846a19421ffe134acd
-      internalID: 1800468650891611510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WiggityWindmill_1
-      rect:
-        serializedVersion: 2
-        x: 229
-        y: 0
-        width: 371
-        height: 371
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48cabc787f76f5141bc7fb04c118943a
-      internalID: 3292527256868906408
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9351aa063a3ebbb4fb992ff204e72808
+    spriteID: 8e630f22c131ff14c8dd5c218bd9a51b
     internalID: 0
     vertices: []
     indices: 
