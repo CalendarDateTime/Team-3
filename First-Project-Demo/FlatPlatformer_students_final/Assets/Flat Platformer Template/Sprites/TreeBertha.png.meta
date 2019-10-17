@@ -1,7 +1,88 @@
 fileFormatVersion: 2
 guid: 9d0b60ce0de97e746a9e67a909fe147b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3170753383374529631
+    second: TreeBertha_0
+  - first:
+      213: 3633590811639882602
+    second: TreeBertha_1
+  - first:
+      213: 648942734371445365
+    second: TreeBertha_2
+  - first:
+      213: -1429195030073558491
+    second: TreeBertha_3
+  - first:
+      213: 5110530339468745719
+    second: TreeBertha_4
+  - first:
+      213: -3988842553267738657
+    second: TreeBertha_5
+  - first:
+      213: -5725973628012660081
+    second: TreeBertha_6
+  - first:
+      213: 8009987938996687225
+    second: TreeBertha_7
+  - first:
+      213: 21002703138269071
+    second: TreeBertha_8
+  - first:
+      213: -2019766259231250139
+    second: TreeBertha_9
+  - first:
+      213: -5423055703882283751
+    second: TreeBertha_10
+  - first:
+      213: -4831238962061659660
+    second: TreeBertha_11
+  - first:
+      213: -3604981653353877424
+    second: TreeBertha_12
+  - first:
+      213: -3027546831279044214
+    second: TreeBertha_13
+  - first:
+      213: -9062030212282555671
+    second: TreeBertha_14
+  - first:
+      213: 1236067887526861535
+    second: TreeBertha_15
+  - first:
+      213: -1500963218535032461
+    second: TreeBertha_16
+  - first:
+      213: -8551869360016609254
+    second: TreeBertha_17
+  - first:
+      213: 905209657291189204
+    second: TreeBertha_18
+  - first:
+      213: -1981037988728276886
+    second: TreeBertha_19
+  - first:
+      213: -3932519806687750906
+    second: TreeBertha_20
+  - first:
+      213: -3247964657104985164
+    second: TreeBertha_21
+  - first:
+      213: 2305635780990225627
+    second: TreeBertha_22
+  - first:
+      213: -8758962118720682410
+    second: TreeBertha_23
+  - first:
+      213: 4442644735910004848
+    second: TreeBertha_24
+  - first:
+      213: 5267821562116687197
+    second: TreeBertha_25
+  - first:
+      213: -7743747471381095819
+    second: TreeBertha_26
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +121,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 155
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +150,587 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TreeBertha_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 3106
+        width: 557
+        height: 841
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84be7bf4e14801458bc032cea5f521c
+      internalID: -3170753383374529631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_1
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 3106
+        width: 676
+        height: 742
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da6ead413a63744497d86ee7e0fd7a5
+      internalID: 3633590811639882602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_2
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 3106
+        width: 444
+        height: 908
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2e358c7b345fe4096463997ece8040
+      internalID: 648942734371445365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_3
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 3106
+        width: 444
+        height: 908
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7c8c9e7d5472a4abc44ca3017efcf5
+      internalID: -1429195030073558491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_4
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 3106
+        width: 414
+        height: 591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c374f5131628aa41bfe68bea04c9b11
+      internalID: 5110530339468745719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_5
+      rect:
+        serializedVersion: 2
+        x: 3055
+        y: 3106
+        width: 415
+        height: 627
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6e1f99c3b039047ae3b5b437121056
+      internalID: -3988842553267738657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_6
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 3106
+        width: 471
+        height: 591
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2acc1d2340d2319439cb53201f18e604
+      internalID: -5725973628012660081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2076
+        width: 453
+        height: 841
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0decf1b193dd6f3429e159eb17cf04b0
+      internalID: 8009987938996687225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_8
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 2076
+        width: 423
+        height: 628
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabeafb3835a531478c3956f298fdfbd
+      internalID: 21002703138269071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_9
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 2092
+        width: 471
+        height: 590
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2b16f3135e1c644be18fdb5ca6506a
+      internalID: -2019766259231250139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_10
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 2076
+        width: 420
+        height: 895
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80deab9286c630d4dbb4fe945bb1274b
+      internalID: -5423055703882283751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_11
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 2066
+        width: 443
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0112eb7f41700e448c0b0d24098d423
+      internalID: -4831238962061659660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_12
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 2066
+        width: 458
+        height: 742
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad908cff8201d4a428ab948b9bc28411
+      internalID: -3604981653353877424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_13
+      rect:
+        serializedVersion: 2
+        x: 3461
+        y: 2030
+        width: 613
+        height: 911
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0888b870e706ca7499ffdc9d1013317b
+      internalID: -3027546831279044214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1087
+        width: 363
+        height: 633
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97a667eefdbe9f4a91d6cdbe1c38982
+      internalID: -9062030212282555671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_15
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1095
+        width: 322
+        height: 714
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf1e1d0faf74034aa5caaf066980077
+      internalID: 1236067887526861535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_16
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 1079
+        width: 445
+        height: 844
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30a94dbdbcf7d14aa210e8144f10668
+      internalID: -1500963218535032461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_17
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1095
+        width: 363
+        height: 714
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4af2f0421964c47be96b877cd54d95
+      internalID: -8551869360016609254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_18
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 1083
+        width: 418
+        height: 840
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ac10d4d8273eb4e8a51296dee1b5be
+      internalID: 905209657291189204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_19
+      rect:
+        serializedVersion: 2
+        x: 3001
+        y: 1095
+        width: 362
+        height: 714
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917f4d3b531b29e4c9bc667bb9b2c6ce
+      internalID: -1981037988728276886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_20
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 1083
+        width: 454
+        height: 840
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a53dfb48e97df4c841ca34f36ff699
+      internalID: -3932519806687750906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 540
+        height: 843
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46b7f24433c5744ebe19dd04c3657ed
+      internalID: -3247964657104985164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_22
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 17
+        width: 549
+        height: 779
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569e58df55ef31f46bf1e814890e8838
+      internalID: 2305635780990225627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_23
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 0
+        width: 595
+        height: 683
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f28cde4193f6864395a90f30184fc53
+      internalID: -8758962118720682410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_24
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 0
+        width: 585
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a10e9f13069414799bf70d5a407df9
+      internalID: 4442644735910004848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_25
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 3
+        width: 551
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fe87d06c20bb545939eaf8e69018a1
+      internalID: 5267821562116687197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TreeBertha_26
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 3
+        width: 544
+        height: 658
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25af21f2fc451347aa7b6eacd9b6d0c
+      internalID: -7743747471381095819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

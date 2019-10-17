@@ -50,5 +50,4 @@ public class CameraMove : MonoBehaviour {
             transform.position = currentPosition;
         }
     }
-}    
-
+}
