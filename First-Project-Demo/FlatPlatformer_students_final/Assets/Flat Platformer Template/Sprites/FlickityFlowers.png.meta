@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 343f6e09c8a45c5409abe4eb0637f1ec
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2130992639867182438
+    second: FlickityFlowers_0
+  - first:
+      213: -5996512980813369359
+    second: FlickityFlowers_1
+  - first:
+      213: 217941051175620484
+    second: FlickityFlowers_2
+  - first:
+      213: 3376966289233806813
+    second: FlickityFlowers_3
+  - first:
+      213: 7800107568268974662
+    second: FlickityFlowers_4
+  - first:
+      213: -7488086703637369776
+    second: FlickityFlowers_5
+  - first:
+      213: -4708045350316015858
+    second: FlickityFlowers_6
+  - first:
+      213: 4776701547671466301
+    second: FlickityFlowers_7
+  - first:
+      213: -7474236420367027898
+    second: FlickityFlowers_8
+  - first:
+      213: 9042856572046131680
+    second: FlickityFlowers_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -82,7 +112,217 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FlickityFlowers_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 172
+        width: 266
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227df45ac2e0e344580dc82a02cf3066
+      internalID: -2130992639867182438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 172
+        width: 266
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec43a93973192454f908d60e0f055550
+      internalID: -5996512980813369359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_2
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 172
+        width: 266
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04eff965f98dd0e4baa71baba716b579
+      internalID: 217941051175620484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_3
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 172
+        width: 265
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6207a0bc285757e46aefde173a802353
+      internalID: 3376966289233806813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 78
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30bf9f5005db414284eea2add33549f
+      internalID: 7800107568268974662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_5
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 3
+        width: 64
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d458dc05296115349a8fed9575dcee88
+      internalID: -7488086703637369776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 3
+        width: 58
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1726e8c1ac75e9c4fa90ae98639c9e01
+      internalID: -4708045350316015858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_7
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1
+        width: 41
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb402c73fe68bf41a041a0ede4036cb
+      internalID: 4776701547671466301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_8
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 10
+        width: 77
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13db42aaa324a3e48b7ebd41e3fbd732
+      internalID: -7474236420367027898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlickityFlowers_9
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 17
+        width: 58
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6cd1c5c575a54342975fe5f71ef4f6d
+      internalID: 9042856572046131680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
