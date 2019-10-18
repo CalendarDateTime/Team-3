@@ -21,31 +21,32 @@ public class DamageOnCollide : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-        if (enemy != null)
+        Health otherHealth = collision.gameObject.GetComponent<Health>();
+        if (otherHealth != null)
         {
-            enemy.Health -= DamageAmount;
-
+            otherHealth.Damage(DamageAmount);
+            DamageFunctions.Invoke();
         }
         if (DestroyOnCollide)
         {
-
+            DestroyFunctions.Invoke();
             Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-        if (enemy != null)
+        Health otherHealth = collision.gameObject.GetComponent<Health>();
+        if (otherHealth != null)
         {
-            enemy.Health -= DamageAmount;
-
+            otherHealth.Damage(DamageAmount);
+            DamageFunctions.Invoke();
         }
         if (DestroyOnCollide)
         {
-
+            DestroyFunctions.Invoke();
             Destroy(gameObject);
         }
     }
+
 }
