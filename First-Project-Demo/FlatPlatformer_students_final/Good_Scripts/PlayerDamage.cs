@@ -18,6 +18,8 @@ public class Health : MonoBehaviour
     public UnityEvent DeathFunctions;
     public UnityEvent HealFunctions;
     private bool DeathOccured = false;
+
+    //call this to deal damage
     public void Damage(int damage)
     {
         CurrentHealth -= damage;

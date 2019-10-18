@@ -33,198 +33,113 @@ public class Player : MonoBehaviour {
 
     public bool Active = true;
 
-    void Start()
+    public void DisablePlayer()
     {
-        _audio = GetComponent<AudioSource>();
-        _rigidbody = GetComponent<Rigidbody2D>();
+        Active = false;
+    }
+    public void EnablePlayer()
+    {
+        Active = true;
+    }
+
+    void Start ()
+    {
+        _layerMask = LayerMask.GetMask("Default");
+        rig = gameObject.GetComponent<Rigidbody2D>();
+        _startScale = transform.localScale.x;
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Active)
         {
-            MoveLeft();
+            if (_hit = Physics2D.Linecast(new Vector2(_GroundCast.position.x, _GroundCast.position.y + 0.2f), _GroundCast.position, _layerMask))
+            {
+                if (!_hit.transform.CompareTag("Player"))
+                {
+                    _canJump = true;
+                    _canWalk = true;
+                }
+            }
+            else _canJump = false;
+
+            _inputAxis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            if (_inputAxis.y > 0 && _canJump)
+            {
+                _canWalk = false;
+                _isJump = true;
+            }
         }
-
-        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.LeftArrow))
-        {
-            StopMovingLeft();
-        }
-
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            MoveRight();
-        }
-
-        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.RightArrow))
-        {
-            StopMovingRight();
-        }
-
-        if (Input.GetButtonDown("Jump"))
-        {
-            Jump();
-        }
-
-        int currentScore = (int)Mathf.Floor(transform.position.x) - 7;
-
-        if (currentScore >= 0 && currentScore > score.currentScore)
-        {
-            score.SetScore(currentScore);
-
-        }
-
-
     }
 
     void FixedUpdate()
     {
-        var hit = Physics2D.Linecast(transform.position, groundCheck.position, groundMask);
-
-        _isGrounded = hit.collider != null || _rigidbody.velocity.y == 0;
-
-        if (_isGrounded && hit.collider != null && hit.collider != _previousCollision)
+        if (Active)
         {
-            var platform = hit.collider.gameObject.GetComponent<Platform>();
+            Vector3 dir = cam.ScreenToWorldPoint(Input.mousePosition) - _Blade.transform.position;
+            dir.Normalize();
 
-            if (platform)
+            if (cam.ScreenToWorldPoint(Input.mousePosition).x > transform.position.x + 0.2f)
+                mirror = false;
+            if (cam.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x - 0.2f)
+                mirror = true;
+
+            if (!mirror)
             {
-                platform.playerTouched = true;
+                rot = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                transform.localScale = new Vector3(_startScale, _startScale, 1);
+                _Blade.transform.rotation = Quaternion.AngleAxis(rot, Vector3.forward);
+
             }
-            _previousCollision = hit.collider;
-        }
+            if (mirror)
+            {
+                rot = Mathf.Atan2(-dir.y, -dir.x) * Mathf.Rad2Deg;
+                transform.localScale = new Vector3(-_startScale, _startScale, 1);
+                _Blade.transform.rotation = Quaternion.AngleAxis(rot, Vector3.forward);
 
+            }
 
-        if (_moveLeft)
-        {
-            _move = -1f;
-        }
-        else if (_moveRight)
-        {
-            _move = 1f;
-        }
+            if (_inputAxis.x != 0)
+            {
+                rig.velocity = new Vector2(_inputAxis.x * WalkSpeed * Time.deltaTime, rig.velocity.y);
 
-        if (!_isGameOver && (_moveLeft || _moveRight))
-        {
-            _rigidbody.velocity = new Vector2(_move * maxSpeed * Time.fixedDeltaTime, _rigidbody.velocity.y);
+                if (_canWalk)
+                {
+                    _Legs.clip = _walk;
+                    _Legs.Play();
+                    audioSource.clip = sfxWalk;
+                    audioSource.Play();
+                }
+            }
 
-        }
+            else
+            {
+                rig.velocity = new Vector2(0, rig.velocity.y);
+            }
 
-
-
-        if (_isGrounded && !_groundedLastUpdate)
-        {
-            landParticle.Emit(50);
-
-        }
-
-        _groundedLastUpdate = _isGrounded;
-
-        if (walkClips.Length > 0 && _isGrounded && (_moveLeft || _moveRight))
-        {
-            _audio.PlayOneShot(walkClips[Random.Range(0, walkClips.Length)]);
-        }
-
-    }
-
-    /// <summary>
-    /// Move character left in next call to FixedUpdate. Called on button down.
-    /// </summary>
-    public void MoveLeft()
-    {
-        _moveLeft = true;
-    }
-
-    /// <summary>
-    /// Stop moving the character left. Called on button up.
-    /// </summary>
-    public void StopMovingLeft()
-    {
-        _moveLeft = false;
-        _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
-    }
-
-    /// <summary>
-    /// Move character right in next call to FixedUpdate. Called on button down.
-    /// </summary>
-    public void MoveRight()
-    {
-        _moveRight = true;
-    }
-
-    /// <summary>
-    /// Stop moving the character left. Called on button up.
-    /// </summary>
-    public void StopMovingRight()
-    {
-        _moveRight = false;
-        _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
-    }
-
-    /// <summary>
-    /// Makes the character jump (if on ground) or double jump (if already in the air and has not already double jumped).
-    /// </summary>
-    public void Jump()
-    {
-
-
-        if (_isGrounded && !_isGameOver)
-        {
-            _rigidbody.AddForce(new Vector2(0, jumpForce));
-            _canDoubleJump = true;
-
-            if (jumpClips.Length > 0)
-                _audio.PlayOneShot(jumpClips[Random.Range(0, jumpClips.Length)]);
-
-            StartCoroutine(JumpAnimation());
-        }
-        else if (_canDoubleJump && !_isGameOver)
-        {
-            _rigidbody.velocity = new Vector2(_rigidbody.velocity.x, 0);
-            _rigidbody.AddForce(new Vector2(0, jumpForce));
-            _canDoubleJump = false;
-
-            if (jumpClips.Length > 0)
-                _audio.PlayOneShot(jumpClips[Random.Range(0, jumpClips.Length)]);
-
-            StartCoroutine(JumpAnimation());
+            if (_isJump)
+            {
+                rig.AddForce(new Vector2(0, JumpForce));
+                _Legs.clip = _jump;
+                _Legs.Play();
+                audioSource.clip = sfxJump; 
+                audioSource.Play();
+                _canJump = false;
+                _isJump = false;
+            }
         }
     }
 
-    /// <summary>
-    /// Called on death event. Plays <see cref="InfiniteJumper.Player.audioOnDeath"/>, disables player sprite and enables on death particles.
-    /// Destroys object after a set amount of time.
-    /// </summary>
-    public void OnDeath()
+    public bool IsMirror()
     {
-        if (audioOnDeath.Length > 0)
-            _audio.PlayOneShot(audioOnDeath[Random.Range(0, audioOnDeath.Length)]);
-
-        playerSpriteContainer.SetActive(false);
-        explosionParticleContainer.SetActive(true);
-
-        StartCoroutine(Destroy());
+        return mirror;
     }
 
-
-    private IEnumerator Destroy()
+    void OnDrawGizmos()
     {
-        yield return new WaitForSeconds(0.3f);
-        Destroy(gameObject);
+        Gizmos.DrawLine(transform.position, _GroundCast.position);
     }
-
-    private IEnumerator JumpAnimation()
-    {
-        transform.localScale = jumpingScale;
-
-        yield return new WaitForSeconds(0.2f);
-
-        transform.localScale = groundScale;
-
-    }
-}
-
-
 
     
 }
